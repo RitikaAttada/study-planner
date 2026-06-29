@@ -5,7 +5,7 @@ require('dotenv').config();
 
 const app=express();
 app.use(cors({
-  origin: ['http://localhost:3000', 'study-planner-ruddy-five.vercel.app'],
+  origin: ['http://localhost:3000', 'https://study-planner-nfvia2kx0-ritikaattadas-projects.vercel.app'],
   credentials: true
 }));
 app.use(express.json());
