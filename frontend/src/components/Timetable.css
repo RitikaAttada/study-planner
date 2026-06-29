@@ -1,0 +1,179 @@
+.timetable {
+  background: #541A1A;
+  border-radius: 16px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  padding: 24px;
+  margin-top: 32px;
+}
+
+.timetable-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.timetable-header h3 {
+  font-size: 18px;
+  color: #DCC3AA;
+}
+
+.add-slot-btn {
+  padding: 8px 18px;
+  background-color:#DCC3AA;
+  color:#541A1A;
+  font-family:'Poppins';
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.slot-form {
+  background: #810B38;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.slot-form select,
+.slot-form input[type="text"] {
+  padding: 10px 14px;
+  border: 2px solid #DCC3AA;
+  background-color:#DCC3AA;
+  color:#541A1A;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+.slot-form select:focus,
+.slot-form input:focus {
+  border-color: #541A1A;
+}
+
+.time-inputs {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.time-inputs input {
+  padding: 10px 14px;
+  background-color: 2px solid #f7fafc;
+  border:none;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+  flex: 1;
+}
+
+.time-inputs span {
+  color: #DCC3AA;
+}
+
+.color-picker {
+  display: flex;
+  gap: 10px;
+}
+
+.color-dot {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.color-dot:hover {
+  transform: scale(1.2);
+}
+
+.color-dot.active {
+  transform: scale(1.3);
+  box-shadow: 0 0 0 3px #DCC3AA, 0 0 0 5px #541A1A;
+}
+
+.slot-form button[type="submit"] {
+  padding: 10px;
+  background-color:#541A1A;
+  color:#F1E2D1;
+  font-family:'Poppins';
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.timetable-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.timetable-day {
+  display: flex;
+  gap: 16px;
+  align-items: flex-start;
+}
+
+.day-label {
+  width: 100px;
+  font-weight: 600;
+  color: #F1E2D1;
+  font-size: 14px;
+  padding-top: 8px;
+  flex-shrink: 0;
+}
+
+.day-slots {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.no-slot {
+  color: #DCC3AA;
+  font-size: 13px;
+  padding: 8px 0;
+}
+
+.slot-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #DCC3AA;
+  padding: 10px 14px;
+  border-radius: 8px;
+  min-width: 160px;
+  gap: 10px;
+}
+
+.slot-subject {
+  font-weight: 600;
+  font-size: 14px;
+  color: #810B38;
+}
+
+.slot-time {
+  font-size: 12px;
+  color: #810B38;
+  margin-top: 2px;
+}
+
+.delete-slot-btn {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: #541A1A;
+  line-height: 1;
+  transition: color 0.2s;
+}
+
+.delete-slot-btn:hover {
+  color: #810B38;
+}
